@@ -1,0 +1,42 @@
+# bob config
+
+# options
+colored menu = 1
+
+# format: command = cli args
+
+q = ollama run glm-5:cloud
+talk = codex --model gpt-5.2 --full-auto
+code = claude --model claude-sonnet-4-6
+code hard = claude --model claude-opus-4-6
+code light = claude --model claude-haiku-4-5
+local = ollama run qwen3:8b
+
+# --- more claude ---
+# code plan = claude --model claude-sonnet-4-6 --permission-mode plan
+# code fast = claude --model claude-haiku-4-5 --effort low
+# code print = claude --model claude-sonnet-4-6 --print
+
+# --- more codex ---
+# talk safe = codex --model gpt-5.2 --ask-for-approval untrusted --sandbox read-only
+# talk search = codex --model gpt-5.2 --full-auto --search
+
+# --- gemini ---
+# web = gemini
+# web pro = gemini --model gemini-2.5-pro
+# web flash = gemini --model gemini-2.5-flash
+# web plan = gemini --approval-mode plan
+
+# --- ollama models ---
+# qwen32 = ollama run qwen3:32b
+# qwen72 = ollama run qwen3:72b
+# deepseek = ollama run deepseek-r1
+# llama = ollama run llama3.3
+# codestral = ollama run codestral
+# mistral = ollama run mistral
+# phi = ollama run phi4
+# gemma = ollama run gemma3
+# glm = ollama run glm4
+
+# --- ollama with flags ---
+# think = ollama run qwen3:8b --think
